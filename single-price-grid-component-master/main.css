@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 1rem;
+}
+
+section {
+  min-height: 100vh;
+  background-color: bisque;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid-component {
+  max-width: 70%;
+  border-radius: 10px;
+}
+
+.community-box {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.community-box .community-header {
+  color: #2ab2af;
+  margin: 1rem 0;
+}
+
+.community-box .community-paragraph-accent {
+  color: #c0df34;
+  font-weight: 700;
+}
+
+.community-box .community-paragraph {
+  margin: 1.1rem 0;
+  line-height: 1.6;
+  color: #98a6bd;
+}
+
+.sub-box {
+  background-color: #2ab2af;
+  color: #fff;
+  padding: 1rem;
+}
+
+.sub-box .sub-box-header {
+  margin-bottom: 1.25rem;
+}
+
+.sub-box .dolla {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.sub-box span {
+  color: #e5eff5;
+}
+
+.sub-box p {
+  color: #e5eff5;
+  margin: 1rem 0;
+}
+
+.sub-box .sign-up-btn {
+  padding: .75rem 5rem;
+  font-size: 1.1em;
+  background-color: #c0df34;
+  border: none;
+  margin: 1rem auto;
+  display: block;
+  color: #fff;
+}
+
+.why-box {
+  background-color: #4ABEBD;
+  padding: 1rem;
+}
+
+.why-box .why-header {
+  color: #fff;
+  margin: 1rem 0;
+}
+
+.why-box .why-list {
+  list-style: none;
+}
+
+.why-box li {
+  margin: .125rem 0;
+}
+
+.why-box a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+@media (min-width: 700px) {
+  .community-paragraph {
+    width: 90%;
+  }
+  .bottom-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .bottom-grid .sub-box,
+  .bottom-grid .why-box {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .grid-component {
+    position: relative;
+    max-width: 40rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

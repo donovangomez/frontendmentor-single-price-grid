@@ -1,0 +1,135 @@
+// primary colors
+$cyan:  hsl(179, 62%, 43%);
+$yellow: hsl(71, 73%, 54%);
+
+// neutral
+$light-gray: hsl(204, 43%, 93%);
+$gray-blue: hsl(218, 22%, 67%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 1rem;
+}
+
+section {
+    min-height: 100vh;
+    background-color:bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-component {
+    max-width: 70%;
+    border-radius: 10px;
+}
+
+.community-box {
+    background-color: #fff;
+    padding: 1rem;
+
+    .community-header {
+      color: $cyan;
+      margin: 1rem 0;
+    }
+
+    .community-paragraph-accent {
+        color: $yellow;
+        font-weight: 700;
+    }
+
+    .community-paragraph {
+        margin: 1.1rem 0;
+        line-height: 1.6;
+        color: $gray-blue;
+    }
+}
+
+.sub-box {
+    background-color: $cyan;
+    color: #fff;
+    padding: 1rem;
+
+    .sub-box-header {
+        margin-bottom: 1.25rem;
+    }
+
+    .dolla {
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    span {
+        color:$light-gray;
+    }
+
+    p {
+        color:$light-gray;
+        margin: 1rem 0;
+    }
+
+    .sign-up-btn {
+        padding: .75rem 5rem;
+        font-size: 1.1em;
+        background-color:hsl(71, 73%, 54%);
+        border: none;
+        margin: 1rem auto;
+        display: block;
+        color: #fff;
+    }
+}
+
+.why-box {
+    background-color: #4ABEBD;
+    padding: 1rem;
+
+    .why-header {
+        color: #fff;
+        margin: 1rem 0;
+    }
+
+    .why-list {
+        list-style: none;
+    }
+
+    li {
+        margin: .125rem 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #ddd;
+    }
+}
+
+// media query
+@media(min-width: 700px) {
+
+    .community-paragraph {
+        width: 90%;
+    }
+
+    .bottom-grid {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+        .sub-box,
+        .why-box {
+            flex: 1;
+        }
+    }
+
+    .grid-component {
+        position: relative;
+        max-width: 40rem;
+    }
+
+}
